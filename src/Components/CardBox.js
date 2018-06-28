@@ -68,7 +68,7 @@ class CardBox extends React.Component {
 
 	render(){
 		return (
-			<div>
+			<div className='row'>
 				{
 					//console.log( this)
 					this.state.Data.length >0?
