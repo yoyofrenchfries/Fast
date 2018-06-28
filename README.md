@@ -12,4 +12,9 @@
   - ChatBox
   - Info
   - SendBox
-## 
+## Setting
+- Four Components
+  - NavBar
+  - NameInfo
+  - GiftSet
+  - MyRecord 
