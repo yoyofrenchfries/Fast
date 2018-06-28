@@ -4,29 +4,24 @@ class CardItem extends React.Component{
   render(){
     console.log(this.props)
     return(
-      <div className = 'Container'>
+      <div className = 'inline-block Container'>
         <div>
-          <div className="card" >
-            <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" className="btn btn-primary">Go somewhere</a>
+          <div className="card" style={{width: 18+'em', margin: 4 +'px'}}>
+            <div className="row card-body">
+              <h5 className= "col-6 card-title" style={{width: 5+'em', margin: 1+'px'}}>{this.props.name}</h5>
+              <p className= "col-5">{this.props.veh}</p>
+              <p className="col-6 card-text">{ this.props.start }</p>
+              <p className="col-5">{this.props.pstart}</p>
+              <p className="col-6 card-text">{ this.props.dest }</p>
+              <p className="col-5">{this.props.pend}</p>
+              <p>{ this.props.excerpt }</p>
+            </div>
+              <div >
+              <a href="#" className=" btn btn-primary" style={{width: 8+'em' , margin: 4 + 'px'}}>駕駛++</a>
+              <a href="#" className="btn btn-primary" style={{width: 8+'em' , margin: 2 + 'px'}}>乘客++</a>
             </div>
           </div>
         </div>
-        {/* <div className='row'>
-          <div className = 'col-2 title' >
-            { this.props.name }
-          </div>
-          <div className = ' col-2  start'>
-            { this.props.start }
-          </div>
-          <div className = 'col-2 dest '>
-            { this.props.dest }
-          </div>
-          <div className = 'col-2 excerpt'>
-            { this.props.excerpt }
-          </div>*/}
       </div>
     )
   }
