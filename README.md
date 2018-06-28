@@ -1,5 +1,5 @@
 # Fast Front-end
-## 開團
+## Ride
 - Four Components
   - NavBar
   - SearchBar
